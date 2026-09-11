@@ -1,0 +1,39 @@
+Prithee test cases
+
+Test 1:
+Shall I compare thee to a summer’s day?
+Thou art more lovely and more temperate:
+Rough winds do shake the darling buds of May,
+And summer’s lease hath all too short a date;
+Sometime too hot the eye of heaven shines,
+And often is his ____
+
+User inputs "gold"
+
+Expected output: Correct!
+
+
+Shall I compare thee to a summer’s day?
+Thou art more ______
+
+User inputs "more"
+
+Expected output: Wrong!
+
+Shall I compare thee __
+
+User inputs "to"
+
+Expected output: Correct!
+
+
+Shall I compare thee to a summer’s day?
+Thou art more lovely and more temperate:
+Rough winds do _____
+
+User inputs "shake"
+
+Expected output: Correct!
+
+and program should stop running since correct 3 times
+
