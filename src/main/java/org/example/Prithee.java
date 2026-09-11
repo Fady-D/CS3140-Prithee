@@ -35,6 +35,38 @@ public class Prithee {
         this.randomNum = -1;
     }
 
+    public void playGame() {
+        while(rightCount < 3 && wrongCount < 3) {
+            randomNum = (int) (Math.random() * sonnetWords.size());
+            //Prints the sonnet up to a random number
+            for (int i = 0; i < randomNum; i++) {
+                System.out.print(sonnetWords.get(i) + " ");
+            }
+            //Prints underscores for the last word
+            for (int i = 0; i < sonnetWords.get(randomNum).length(); i++) {
+                System.out.print("_");
+            }
+
+            System.out.print("\n" +
+                    "\n==========================\n" +
+                    "please enter the next word (include punctuation): ");
+            if(scanner.next().equals(sonnetWords.get(randomNum))) {
+                rightCount++;
+                System.out.println("Correct!\n");
+            }
+            else {
+                wrongCount++;
+                System.out.println("Wrong!\n");
+            }
+        }
+
+        if (rightCount == 3) {
+            System.out.println("Thanks for playing! You got 3 Correct!");
+        }
+        else {
+            System.out.println("Thanks for playing! You got 3 Wrong!\nBetter luck next time!");
+        }
+    }
 
 
 }
