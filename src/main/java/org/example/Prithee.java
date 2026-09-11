@@ -52,11 +52,11 @@ public class Prithee {
                     "please enter the next word (include punctuation): ");
             if(scanner.next().equals(sonnetWords.get(randomNum))) {
                 rightCount++;
-                System.out.println("Correct!\n");
+                System.out.println("\nCorrect!\n");
             }
             else {
                 wrongCount++;
-                System.out.println("Wrong!\n");
+                System.out.println("\nWrong!\n");
             }
         }
 
