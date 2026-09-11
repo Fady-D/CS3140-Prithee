@@ -9,9 +9,10 @@ gets either 3 correct or 3 incorrect.
 
 
 To run this program, start the Main class
+When prompted for the next word, you must include punctuation that follows the word.
+
 
 Core Pseudocode ->
-
 let rightCount be an int
 let wrongCount be an int
 let randomNum be an int

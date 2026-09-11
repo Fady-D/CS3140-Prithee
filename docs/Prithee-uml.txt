@@ -1,0 +1,10 @@
+Prithee
+------------
+sonnet: String
+rightCount: int
+wrongCount: int
+randomNum: int
+scanner: Scanner
+sonnetWords: ArrayList<String>
+-----------------
+playGame()
